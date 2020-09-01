@@ -1,4 +1,4 @@
-async function append(document) {
+function append(document) {
     let items = document.querySelector('#task').value
         .split(",")
         .map(x => parseInt(x.trim(), 10))
