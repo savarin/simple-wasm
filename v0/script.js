@@ -1,8 +1,10 @@
-fetch('./add.wasm')
-    .then(response => response.arrayBuffer())
-    .then(bytes => WebAssembly.instantiate(bytes))
-    .then(results => {
-        instance = results.instance;
-        document.getElementById("container").textContent = instance.exports.add(1, 1);
-    })
-    .catch(console.error);
+async function add(a, b) {
+    const response = await fetch('./add.wasm');
+    const buffer = await response.arrayBuffer()
+    const bytes = await WebAssembly.instantiate(buffer);
+    const instance = bytes.instance;
+
+    document.getElementById("container").textContent = instance.exports.add(a, b);
+}
+
+add(1, 2);
