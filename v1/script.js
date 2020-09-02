@@ -1,25 +1,19 @@
-function append(document) {
-    let items = document.querySelector('#task').value
-        .split(",")
-        .map(x => parseInt(x.trim(), 10))
+async function append(items) {
+    const response = await fetch('./add.wasm');
+    const buffer = await response.arrayBuffer()
+    const bytes = await WebAssembly.instantiate(buffer);
+    const instance = bytes.instance;
+
+    // Reduce list of numbers to total
+    result = items.reduce((total, x) => instance.exports.add(total, x))
 
     // Create new item for list
     const li = document.createElement('li');
+    li.innerHTML = result.toString();
 
-    fetch('./add.wasm')
-        .then(response => response.arrayBuffer())
-        .then(bytes => WebAssembly.instantiate(bytes))
-        .then(results => results.instance)
-        .then(instance => 
-            items.reduce((total, x) => instance.exports.add(total, x))
-        )
-        .then(result => {
-            // Add new item to task list
-            li.innerHTML = result.toString();
-            document.querySelector('#tasks').append(li)
-        })
-        .catch(console.error);
-    }
+    // Add to task list
+    document.querySelector('#tasks').append(li);
+}
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -37,8 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('form').onsubmit = () => {
 
-        // Append result as list item
-        append(document);
+        // Parse numbers in input field and convert from strings to ints
+        let items = document.querySelector('#task').value
+            .split(",")
+            .map(x => parseInt(x.trim(), 10))
+
+        // Append sum of inputs as list item
+        append(items);
 
         // Clear input field and disable button again
         document.querySelector('#task').value = '';
