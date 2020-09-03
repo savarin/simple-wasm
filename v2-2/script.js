@@ -1,3 +1,4 @@
+
 async function add(a, b) {
     const response = await fetch('./add.wasm');
     const buffer = await response.arrayBuffer()
