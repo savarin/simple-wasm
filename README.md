@@ -13,10 +13,10 @@ Minimal examples for compiling and running WebAssembly.
 
 Examples adapted from:
 
-- [fdb](https://github.com/fdb/webassembly-with-rust)
-- [wasmtime](https://github.com/bytecodealliance/wasmtime)
-- [CS50](https://cs50.harvard.edu/web)
 - [MDN](https://developer.mozilla.org/en-US/docs/WebAssembly/Rust_to_wasm)
+- [CS50](https://cs50.harvard.edu/web)
+- [wasmtime](https://github.com/bytecodealliance/wasmtime)
 - [yew](https://github.com/yewstack/yew)
+- [fdb](https://github.com/fdb/webassembly-with-rust)
 
-Recommended background materials [here](https://payments.posthaven.com/rc-w4d4-the-only-intro-youll-need).
+Recommended background material [here](https://payments.posthaven.com/rc-w4d4-the-only-intro-youll-need).
