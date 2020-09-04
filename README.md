@@ -8,3 +8,13 @@ Minimal examples for compiling and running WebAssembly.
 - v4 - full stack Rust via wasm
 
 Please refer to respective directories for details.
+
+## Sources
+
+Examples adapted from:
+
+- [fdb](https://github.com/fdb/webassembly-with-rust)
+- [wasmtime](https://github.com/bytecodealliance/wasmtime)
+- [CS50](https://cs50.harvard.edu/web)
+- [MDN](https://developer.mozilla.org/en-US/docs/WebAssembly/Rust_to_wasm)
+- [yew](https://github.com/yewstack/yew)
