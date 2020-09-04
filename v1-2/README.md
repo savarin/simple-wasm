@@ -1,6 +1,6 @@
 ## Requirements
 
-[wabt](https://github.com/WebAssembly/wabt)
+- [wabt](https://github.com/WebAssembly/wabt)
 
 Include to ./bash_profile: `export PATH="~/<path>/wabt/bin:$PATH"`.
 

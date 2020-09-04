@@ -1,6 +1,6 @@
 ## Requirements
 
-(wasmtime)[https://github.com/bytecodealliance/wasmtime]
+- [wasmtime](https://github.com/bytecodealliance/wasmtime)
 
 ## Commands
 

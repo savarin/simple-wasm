@@ -1,7 +1,7 @@
 ## Requirements
 
-[wabt](https://github.com/WebAssembly/wabt)
-[wasmtime](https://github.com/bytecodealliance/wasmtime)
+- [wabt](https://github.com/WebAssembly/wabt)
+- [wasmtime](https://github.com/bytecodealliance/wasmtime)
 
 Include to ./bash_profile: `export PATH="~/<path>/wabt/bin:$PATH"`.
 
