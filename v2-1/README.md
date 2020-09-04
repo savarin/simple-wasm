@@ -6,6 +6,6 @@
 
 ```
 rustup target add wasm32-wasi      # add target to Rust toolchain
-rustc add.rs --target wasm32-wasi  # compiles to .wasm
-wasmtime add.wasm                  # runs with wasmtime
+rustc add.rs --target wasm32-wasi  # compile to .wasm
+wasmtime add.wasm                  # run with wasmtime
 ```

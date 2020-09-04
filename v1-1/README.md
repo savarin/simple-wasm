@@ -8,6 +8,6 @@ Include to ./bash_profile: `export PATH="~/<path>/wabt/bin:$PATH"`.
 ## Commands
 
 ```
-wat2wasm add.wat   # compiles to .wasm
-wasmtime add.wasm  # runs with wasmtime
+wat2wasm add.wat   # compile to .wasm
+wasmtime add.wasm  # run with wasmtime
 ```
