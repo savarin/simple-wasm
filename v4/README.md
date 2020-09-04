@@ -1,6 +1,6 @@
 ## Requirements
 
-- [wasmtime](https://github.com/bytecodealliance/wasmtime)
+- [wasm-pack](https://github.com/rustwasm/wasm-pack)
 
 ## Commands
 
