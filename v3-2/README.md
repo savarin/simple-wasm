@@ -5,6 +5,7 @@
 
 ```
 cd add                                                         # change directory to /add
+rustup target add wasm32-unknown-unknown                       # add target to Rust toolchain
 cargo build --target=wasm32-unknown-unknown                    # build package
 
 cd ..                                                          # change directory

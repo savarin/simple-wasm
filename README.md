@@ -6,9 +6,9 @@ Minimal examples for compiling and running WebAssembly.
 
 - v1 - .wat to .wasm
 - v2 - Rust to .wasm using rustc
-- v2 - Rust to .wasm using cargo
-- v3 - Rust/JavaScript interop via wasm
-- v4 - full stack Rust via wasm
+- v3 - Rust to .wasm using cargo
+- v4 - Rust/JavaScript interop via wasm
+- v5 - full stack Rust via wasm
 
 ## Sources
 

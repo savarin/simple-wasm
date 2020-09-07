@@ -6,6 +6,7 @@
 
 ```
 cd add                                      # change directory to /add
+rustup target add wasm32-wasi               # add target to Rust toolchain
 cargo build --target=wasm32-wasi            # build package
 
 cd ..                                       # change directory
