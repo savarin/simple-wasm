@@ -5,10 +5,13 @@
 ## Commands
 
 ```
-cd app                                                           # change directory to /app
-wasm-pack build --target web --out-name wasm --out-dir ./static  # build the package
+cd hello         # change directory to /hello
+wasm-pack build  # build the package
+cd pkg           # change director to /hello/pkg
+npm link         # make package available
 
-rustup -v install nightly                                        # install nightly Rust
-cargo +nightly install miniserve                                 # install miniserve
-miniserve ./static --index index.html                            # start a web server
+cd ../../site    # change directory to /site
+npm link hello   # link to package
+npm install      # install dependencies
+npm run serve    # start a web server
 ```
