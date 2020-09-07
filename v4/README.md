@@ -15,3 +15,5 @@ npm link hello   # link to package
 npm install      # install dependencies
 npm run serve    # start a web server
 ```
+
+Source: [MDN](https://developer.mozilla.org/en-US/docs/WebAssembly/Rust_to_wasm)
