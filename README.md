@@ -1,4 +1,4 @@
-# minimal
+# simple-wasm
 
 Minimal examples for compiling and running WebAssembly.
 
